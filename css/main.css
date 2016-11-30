@@ -44,6 +44,13 @@ p {
   margin: 0 0 1.3rem;
 }
 
+.wrapper {
+  max-width: 65rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
 /* ----- =Header ----- */
 
 body > header {
@@ -70,7 +77,7 @@ header h1 {
 
 .nav-check {
   position: absolute;
-  left: -100px;
+  left: -10000px;
 }
 
 .nav-label:hover {
@@ -117,6 +124,7 @@ header nav a {
 header nav a:hover {
   background-color: #c39;
   color: #fff;
+  transition: background-color .25s, color .25s;
 }
 
 header nav a .img-icon,
@@ -273,6 +281,10 @@ body > main {
   padding: 1rem;
 }
 
+.shop-reviews h2 {
+  border-bottom: 1px solid #a2a2a2;
+}
+
 .reviews {
   list-style-type: none;
   padding: 0;
@@ -378,6 +390,17 @@ footer .navbar li {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h2,
+  p {
+    margin: 0 0 1.4rem;
+  }
+
+
   /* ----- +Header ----- */
 
   header label {
@@ -391,12 +414,13 @@ footer .navbar li {
 
   header h1 {
     text-align: left;
+    display: none;
   }
 
   header nav {
     background-color: rgba(0, 0, 0, 0);
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: -1rem;
     left: auto;
     right: 0;
     width: 30rem;
@@ -405,6 +429,10 @@ footer .navbar li {
     z-index: 999;
     padding: .25rem 1rem;
     text-align: right;
+  }
+
+  header .wrapper {
+    overflow: visible;
   }
 
   header nav .navbar {
@@ -454,6 +482,10 @@ footer .navbar li {
 
   /* ----- +Main ----- */
 
+  body > main {
+    margin: 3.9rem 0 0;
+  }
+
   .special {
     position: relative;
     height: 30rem;
@@ -465,8 +497,7 @@ footer .navbar li {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: auto;
-    min-height: 100%;
+    min-width: 50rem;
   }
 
   .caption {
@@ -495,14 +526,26 @@ footer .navbar li {
     padding: 2rem 1rem;
   }
 
+  .news {
+    overflow: hidden;
+  }
+
   .news div {
     float: left;
     width: 40%;
+    position: relative;
+    overflow: hidden;
   }
 
   .news div:last-child {
     width: 60%;
     padding: 2rem;
+  }
+
+  .news img {
+    min-width: 30rem;
+    position: relative;
+    left: -10%
   }
 
   .shop-reviews li {
@@ -513,6 +556,11 @@ footer .navbar li {
 
   .user-review {
     border-bottom: none;
+  }
+
+  .user-review:hover {
+    background-color: #f2f2f2;
+    transition: background-color 1s;
   }
 
   .user-img {
@@ -526,6 +574,26 @@ footer .navbar li {
   .rating {
     width: 100%;
     float: none;
+  }
+
+  /* ----- +Footer ----- */
+
+  .nav-soc a {
+    margin: 0 3rem;
+  }
+
+  .soc-icon {
+    width: 3rem;
+  }
+
+  .nav-info a {
+    padding: 0 1.5rem;
+  }
+}
+@media only screen and (min-width: 50em) {
+
+  header h1 {
+    display: block;
   }
 
 }
