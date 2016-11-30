@@ -196,8 +196,18 @@ body > main {
   border-bottom: 1px solid #fff;
 }*/
 
-.about p {
+.about main {
   padding: 1rem;
+}
+
+.about main a {
+  color: #c39;
+  text-decoration: none;
+}
+
+.about main a:hover {
+  text-decoration: underline;
+  opacity: .75;
 }
 
 .products {
