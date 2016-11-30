@@ -11,6 +11,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  background-color: #f2f2f2;
 }
 
 *, *::before, *::after {
@@ -26,6 +27,17 @@ img {
   width: 100%;
 }
 
+h1,
+h2 {
+  font-family: Pacifico, cursive;
+  font-weight: normal;
+}
+
+h2,
+p {
+  margin: 0 0 1.3rem;
+}
+
 /* ----- =Header ----- */
 
 body > header {
@@ -35,10 +47,10 @@ body > header {
   top: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .333);
 }
 
-h1 {
-  font-family: Pacifico, cursive;
+header h1 {
   color: #fff;
   text-align: center;
   font-size: 1.5rem;
@@ -62,7 +74,7 @@ h1 {
   cursor: pointer;
 }
 
-.nav-label img:first-child {
+.nav-label img {
   float: left;
 }
 
@@ -70,15 +82,7 @@ h1 {
   display: none;
 }
 
-/*nav {
-  position: fixed;
-  height: calc(100vh - 4rem);
-  width: 66%;
-  bottom: 0;
-  left: -1000px;
-}*/
-
-.nav-menu {
+header nav {
   background-color: #fff;
   position: fixed;
   top: 4rem;
@@ -86,16 +90,161 @@ h1 {
   transition: left .5s;
   width: 66.666%;
   height: calc(100vh - 4rem);
-  box-shadow: 1px 3px 5px #000;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, .3333);
   z-index: 999;
 }
 
-.nav-check:checked ~ .nav-menu {
+.navbar {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav .navbar {
+  border-bottom: 1px solid #c39;
+  padding: 0 0 1rem;
+}
+
+header nav a {
+  display: block;
+  text-decoration: none;
+  color: #c39;
+}
+
+header nav a:hover {
+  background-color: #c39;
+  color: #fff;
+}
+
+header nav a .icon {
+  margin: 0 1rem;
+  width: 1.5rem;
+}
+
+header nav a .icon,
+header nav p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+header nav a img:nth-child(even) {
+  display: none;
+}
+
+header nav a:hover img:nth-child(even) {
+  display: inline-block;
+}
+
+header nav a:hover img:nth-child(odd) {
+  display: none;
+}
+
+header nav .navbar:last-child a {
+  padding: .5rem 1rem;
+}
+
+.nav-check:checked ~ nav {
   left: 0;
+}
+
+.nav-check:checked ~ .nav-label img:first-child {
+  display: none
+}
+
+.nav-check:checked ~ .nav-label img:last-child {
+  display: block;
 }
 
 /* ----- =Main ----- */
 
 body > main {
   margin-top: 4rem;
+}
+
+.box-dec {
+  margin: 0 0 1rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3333);
+  background-color: #fff;
+}
+
+.special .caption {
+  display: block;
+  padding: 1em;
+  color: #000;
+  text-decoration: none;
+}
+
+.special .caption:hover h2 {
+  color: #c39;
+}
+
+.about header {
+  padding: 1rem;
+}
+
+.about header img {
+  padding: 0 2rem;
+}
+
+/*.about h2 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}*/
+
+.about p {
+  padding: 1rem;
+}
+
+.products {
+  overflow: hidden;
+}
+
+.products h2 {
+  padding: 1rem;
+  margin: 0;
+}
+
+.products a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  float: left;
+  width: 100%;
+}
+
+.products a:hover {
+  background-color: #f2f2f2;
+  transition: background-color 1s;
+}
+
+.products figure {
+  margin: 0;
+  box-shadow: 1px 1px 5px #888;
+}
+
+.products figcaption {
+  padding: 1rem;
+  background-color: #c39;
+}
+
+.news div:last-child {
+  padding: 1rem;
+}
+
+.btn {
+  background-color: #c39;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #c39;
+  border-radius: 5px;
+  padding: .75rem;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #c39;
 }
