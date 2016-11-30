@@ -35,6 +35,7 @@ h1,
 h2 {
   font-family: Pacifico, cursive;
   font-weight: normal;
+  color: #c39;
 }
 
 h2,
@@ -179,24 +180,22 @@ body > main {
   padding: 1em;
   color: #000;
   text-decoration: none;
+  transition: background-color .25s, color .25s;
+}
+
+.special .caption:hover {
+  background-color: #c39;
+  color: #fff;
 }
 
 .special .caption:hover h2 {
-  color: #c39;
+  color: #fff;
+  transition: color .25s;
 }
-/*
-.about header {
-  padding: 1rem;
-}*/
 
 .about img {
-  padding: 0 2rem;
+  padding: 2rem;
 }
-
-/*.about h2 {
-  color: #fff;
-  border-bottom: 1px solid #fff;
-}*/
 
 .about div {
   padding: 1rem;
@@ -360,4 +359,12 @@ footer .navbar li {
 
 .nav-info a:hover {
   color: #c39;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .products a {
+    width: 50%;
+  }
+
 }
