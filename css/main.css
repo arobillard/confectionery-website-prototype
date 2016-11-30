@@ -173,6 +173,7 @@ body > main {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, .3333);
   border-top: 1px solid #e2e2e2;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .special .caption {
@@ -195,6 +196,8 @@ body > main {
 
 .about img {
   padding: 2rem;
+  max-width: 25rem;
+  margin: 0 auto;
 }
 
 .about div {
@@ -363,8 +366,166 @@ footer .navbar li {
 
 @media only screen and (min-width: 25em) {
 
+  header nav {
+    width: 50%;
+  }
+
   .products a {
     width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  /* ----- +Header ----- */
+
+  header label {
+    display: none;
+  }
+
+  .logo-icon {
+    float: left;
+    margin: 0 2rem 0 0;
+  }
+
+  header h1 {
+    text-align: left;
+  }
+
+  header nav {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 30rem;
+    height: inherit;
+    box-shadow: none;
+    z-index: 999;
+    padding: .25rem 1rem;
+    text-align: right;
+  }
+
+  header nav .navbar {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  header nav .navbar:last-child {
+    display: none;
+  }
+
+  header nav li {
+    display: inline-block;
+  }
+
+  header nav a {
+    padding: 1rem 0;
+    color: #fff;
+  }
+
+  header nav a p {
+    margin: 0 1rem 0 0;
+  }
+
+  header nav a img:nth-child(even) {
+    display: inline-block;
+  }
+
+  header nav a img:nth-child(odd) {
+    display: none;
+  }
+
+  header nav a:hover img:nth-child(even) {
+    display: none;
+  }
+
+  header nav a:hover img:nth-child(odd) {
+    display: inline-block;
+  }
+
+  header nav a:hover {
+    color: #c39;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  /* ----- +Main ----- */
+
+  .special {
+    position: relative;
+    height: 30rem;
+    width: 100%;
+  }
+
+  .special img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-height: 100%;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+  .caption p {
+    color: #fff;
+  }
+
+  .about img {
+    float: right;
+    width: 20rem;
+    padding: 1rem 2rem 1rem 1rem;
+  }
+
+  .products h2 {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .products a {
+    width: 25%;
+    padding: 2rem 1rem;
+  }
+
+  .news div {
+    float: left;
+    width: 40%;
+  }
+
+  .news div:last-child {
+    width: 60%;
+    padding: 2rem;
+  }
+
+  .shop-reviews li {
+    float: left;
+    width: 33.3333%;
+    padding: 1rem;
+  }
+
+  .user-review {
+    border-bottom: none;
+  }
+
+  .user-img {
+    float: none;
+    width: 50%;
+    padding: 0 0 1rem 0;
+    margin: 0 auto;
+  }
+
+  .user-review-body,
+  .rating {
+    width: 100%;
+    float: none;
   }
 
 }
