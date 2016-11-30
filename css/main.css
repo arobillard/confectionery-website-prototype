@@ -22,9 +22,13 @@ body {
   margin: 0;
 }
 
-img {
+.img-flex {
   display: block;
   width: 100%;
+}
+
+.img-icon {
+  width: 2rem;
 }
 
 h1,
@@ -58,12 +62,9 @@ header h1 {
   margin: 0;
 }
 
-.icon {
-  width: 2rem;
-}
-
-.logo {
+.logo-icon {
   float: right;
+  height: 2rem;
 }
 
 .nav-check {
@@ -169,6 +170,7 @@ body > main {
 .box-dec {
   margin: 0 0 1rem;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, .3333);
+  border-top: 1px solid #e2e2e2;
   background-color: #fff;
 }
 
@@ -182,12 +184,12 @@ body > main {
 .special .caption:hover h2 {
   color: #c39;
 }
-
+/*
 .about header {
   padding: 1rem;
-}
+}*/
 
-.about header img {
+.about img {
   padding: 0 2rem;
 }
 
@@ -196,7 +198,7 @@ body > main {
   border-bottom: 1px solid #fff;
 }*/
 
-.about main {
+.about div {
   padding: 1rem;
 }
 
@@ -304,8 +306,8 @@ body > main {
 /* ----- =Footer ----- */
 
 body > footer {
-  border-top: 10px solid #222;
-  border-bottom: 10px solid #222;
+  border-top: 15px solid #c39;
+  border-bottom: 30px solid #c39;
   background-color: #000;
 }
 
@@ -314,7 +316,8 @@ footer .navbar li {
 }
 
 .nav-soc {
-  padding: 1rem 1rem .5rem;
+  padding: 2rem 1rem 1rem;
+  margin: 0;
   text-align: center;
 }
 
@@ -340,13 +343,15 @@ footer .navbar li {
 }
 
 .nav-info {
-  padding: .5rem 1rem 1rem;
+  padding: 1rem 1rem 2rem;
+  margin: 0;
   text-align: center;
+  /*background-color: #333;*/
 }
 
 .nav-info li:nth-child(2) {
-  border-left: 1px solid #404040;
-  border-right: 1px solid #404040;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
 
 .nav-info a {
