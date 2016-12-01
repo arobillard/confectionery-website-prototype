@@ -121,6 +121,19 @@ header nav a {
   padding: .5rem 0;
 }
 
+header nav a.current {
+  background-color: #939;
+  color: #fff;
+}
+
+header nav a.current img {
+  display: none;
+}
+
+header nav a.current img:nth-child(2) {
+  display: inline-block;
+}
+
 header nav a:hover {
   background-color: #c39;
   color: #fff;
@@ -177,7 +190,7 @@ body > main {
 }
 
 .box-dec {
-  margin: 0 0 1rem;
+  margin: 0 auto 1rem;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, .3333);
   border-top: 1px solid #e2e2e2;
   background-color: #fff;
@@ -186,7 +199,6 @@ body > main {
 
 .special .caption {
   display: block;
-  padding: 1em;
   color: #000;
   text-decoration: none;
   transition: background-color .25s, color .25s;
@@ -200,6 +212,10 @@ body > main {
 .special .caption:hover h2 {
   color: #fff;
   transition: color .25s;
+}
+
+.special .caption .wrapper {
+  padding: 1rem;
 }
 
 .about img {
@@ -361,8 +377,8 @@ footer .navbar li {
 }
 
 .nav-info li:nth-child(2) {
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 1px solid #404040;
+  border-right: 1px solid #404040;
 }
 
 .nav-info a {
@@ -452,6 +468,7 @@ footer .navbar li {
   header nav a {
     padding: 1rem 0;
     color: #fff;
+    border-radius: 10px;
   }
 
   header nav a p {
@@ -477,7 +494,6 @@ footer .navbar li {
   header nav a:hover {
     color: #c39;
     background-color: #fff;
-    border-radius: 10px;
   }
 
   /* ----- +Main ----- */
@@ -545,7 +561,7 @@ footer .navbar li {
   .news img {
     min-width: 30rem;
     position: relative;
-    left: -10%
+    left: -50%
   }
 
   .shop-reviews li {
@@ -594,6 +610,10 @@ footer .navbar li {
 
   header h1 {
     display: block;
+  }
+
+  .news img {
+    left: -5%
   }
 
 }
