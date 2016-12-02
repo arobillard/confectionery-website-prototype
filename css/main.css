@@ -321,12 +321,19 @@ body > main main {
 .reviews {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 .user-review {
   overflow: hidden;
   padding: 1rem 0;
   border-bottom: 1px solid #f2f2f2;
+}
+
+.user-review:hover {
+  background-color: #f2f2f2;
+  transition: background-color 1s;
 }
 
 .user-img {
@@ -595,19 +602,12 @@ footer .navbar li {
     left: -50%
   }
 
-  .shop-reviews li {
+  .user-review {
     float: left;
     width: 33.3333%;
     padding: 1rem;
-  }
-
-  .user-review {
     border-bottom: none;
-  }
-
-  .user-review:hover {
-    background-color: #f2f2f2;
-    transition: background-color 1s;
+    min-height:
   }
 
   .user-img {
@@ -633,9 +633,6 @@ footer .navbar li {
     width: 3rem;
   }
 
-  .nav-info a {
-    padding: 0 1.5rem;
-  }
 }
 @media only screen and (min-width: 50em) {
 
@@ -645,6 +642,10 @@ footer .navbar li {
 
   .news img {
     left: -5%
+  }
+
+  .nav-info a {
+    padding: 0 1.5rem;
   }
 
 }
