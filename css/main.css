@@ -248,9 +248,17 @@ body > main main {
   overflow: hidden;
 }
 
-.products h2 {
-  padding: 1rem;
-  margin: 0;
+.products header {
+  padding: 1rem 1rem 0;
+}
+
+.products .scroll-window {
+  width: 100vw;
+  overflow: scroll;
+}
+
+.products .scroll-container {
+  width: 400vw;
 }
 
 .products a {
@@ -261,7 +269,7 @@ body > main main {
   display: block;
   padding: 1rem;
   float: left;
-  width: 100%;
+  width: 25%;
 }
 
 .products a:hover {
@@ -431,9 +439,9 @@ footer .navbar li {
     width: 50%;
   }
 
-  .products a {
+  /*.products a {
     width: 50%;
-  }
+  }*/
 
 }
 
@@ -575,10 +583,15 @@ footer .navbar li {
     padding: 1rem 1rem 0 1rem;
   }
 
-  .products a {
+  .products .scroll-container {
+    width: 100vw;
+  }
+
+
+  /*.products a {
     width: 25%;
     padding: 2rem 1rem;
-  }
+  }*/
 
   .news {
     overflow: hidden;
