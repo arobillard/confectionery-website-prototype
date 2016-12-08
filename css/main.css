@@ -97,7 +97,7 @@ p {
   display: none;
 }
 
-.masthead nav {
+nav {
   background-color: #fff;
   position: fixed;
   top: 4rem;
@@ -109,65 +109,65 @@ p {
   z-index: 999;
 }
 
-.masthead nav .navbar {
+nav .navbar {
   border-bottom: 1px solid #c39;
   padding: 0 0 1rem;
 }
 
-.masthead nav a {
+nav a {
   display: block;
   text-decoration: none;
   color: #c39;
   padding: .5rem 0;
 }
 
-.masthead nav a.current {
+nav a.current {
   background-color: #939;
   color: #fff;
 }
 
-.masthead nav a.current img {
+nav a.current img {
   display: none;
 }
 
-.masthead nav a.current img:nth-child(2) {
+nav a.current img:nth-child(2) {
   display: inline-block;
 }
 
-.masthead nav a:hover {
+nav a:hover {
   background-color: #c39;
   color: #fff;
   transition: background-color .25s, color .25s;
 }
 
-.masthead nav a .img-icon,
-.masthead nav p {
+nav a .img-icon,
+nav p {
   display: inline-block;
   vertical-align: middle;
 }
 
-.masthead nav a .img-icon {
+nav a .img-icon {
   margin: 0 1rem;
   width: 1.5rem;
 }
 
-.masthead nav p {
+nav p {
   margin: 0;
 }
 
-.masthead nav a img:nth-child(even) {
+nav a img:nth-child(even) {
   display: none;
 }
 
-.masthead nav a:hover img:nth-child(even) {
+nav a:hover img:nth-child(even) {
   display: inline-block;
 }
 
-.masthead nav a:hover img:nth-child(odd) {
+nav a:hover img:nth-child(odd) {
   display: none;
 }
 
-.masthead nav .navbar:last-child a {
+nav .navbar:last-child a {
   padding: .5rem 1rem;
 }
 
@@ -434,7 +434,7 @@ footer .navbar li {
 
 @media only screen and (min-width: 25em) {
 
-  .masthead nav {
+  nav {
     width: 50%;
   }
 
@@ -468,7 +468,7 @@ footer .navbar li {
     display: none;
   }
 
-  .masthead nav {
+  nav {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     top: -1rem;
@@ -490,48 +490,48 @@ footer .navbar li {
     overflow: visible;
   }
 
-  .masthead nav .navbar {
+  nav .navbar {
     margin: 0;
     padding: 0;
     display: inline-block;
     border: none;
   }
 
-  .masthead nav .navbar:last-child {
+  nav .navbar:last-child {
     display: none;
   }
 
-  .masthead nav li {
+  nav li {
     display: inline-block;
   }
 
-  .masthead nav a {
+  nav a {
     padding: 1rem 0;
     color: #fff;
     border-radius: 10px;
   }
 
-  .masthead nav a p {
+  nav a p {
     margin: 0 1rem 0 0;
   }
 
-  .masthead nav a img:nth-child(even) {
+  nav a img:nth-child(even) {
     display: inline-block;
   }
 
-  .masthead nav a img:nth-child(odd) {
+  nav a img:nth-child(odd) {
     display: none;
   }
 
-  .masthead nav a:hover img:nth-child(even) {
+  nav a:hover img:nth-child(even) {
     display: none;
   }
 
-  .masthead nav a:hover img:nth-child(odd) {
+  nav a:hover img:nth-child(odd) {
     display: inline-block;
   }
 
-  .masthead nav a:hover {
+  nav a:hover {
     color: #c39;
     background-color: #fff;
   }
