@@ -574,7 +574,7 @@ footer .navbar li {
   }
 
   .products h2 {
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 0;
   }
 
   .products .scroll-container {
@@ -613,7 +613,7 @@ footer .navbar li {
   .user-img {
     float: none;
     width: 50%;
-    padding: 0 0 1rem 0;
+    padding: 0 0 1rem;
     margin: 0 auto;
   }
 
