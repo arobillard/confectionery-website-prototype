@@ -176,7 +176,7 @@ p {
 }
 
 .nav-check:checked ~ .nav-label img:first-child {
-  display: none
+  display: none;
 }
 
 .nav-check:checked ~ .nav-label img:last-child {
@@ -298,7 +298,6 @@ body > main main {
 .news h3 {
   font-weight: normal;
   font-style: italic;
-  /*margin: 0 0 1.3rem;*/
   font-size: .875rem;
 }
 
@@ -439,10 +438,6 @@ footer .navbar li {
     width: 50%;
   }
 
-  /*.products a {
-    width: 50%;
-  }*/
-
 }
 
 @media only screen and (min-width: 38em) {
@@ -456,7 +451,6 @@ footer .navbar li {
   p {
     margin: 0 0 1.4rem;
   }
-
 
   /* ----- +Header ----- */
 
@@ -587,12 +581,6 @@ footer .navbar li {
     width: 100vw;
   }
 
-
-  /*.products a {
-    width: 25%;
-    padding: 2rem 1rem;
-  }*/
-
   .news {
     overflow: hidden;
   }
@@ -612,7 +600,7 @@ footer .navbar li {
   .news img {
     min-width: 30rem;
     position: relative;
-    left: -50%
+    left: -50%;
   }
 
   .user-review {
@@ -646,6 +634,7 @@ footer .navbar li {
   }
 
 }
+
 @media only screen and (min-width: 50em) {
 
   .masthead h1 {
@@ -653,7 +642,7 @@ footer .navbar li {
   }
 
   .news img {
-    left: -5%
+    left: -5%;
   }
 
   .nav-info a {
